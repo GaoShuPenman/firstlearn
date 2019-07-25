@@ -1,0 +1,5 @@
+[user_location_from0] (?<=从)([\u4e00-\u9fa5a-zA-Z]{2,5}?)(?=到|去|出发)
+[user_location_from1] (?<=^)([\u4e00-\u9fa5a-zA-Z]{2,5}?)(?=到|去|出发)
+[user_location_to0] (?<=去|到|回|导航|出发|搜索)([\u4e00-\u9fa5a-zA-Z]{2,5}?)(?=要|怎|有|的|应该|咋|游|玩|你|吧|[^\u4e00-\u9fa5a-zA-Z]|$)
+[user_location_to1] (?<=导航)([\u4e00-\u9fa5a-zA-Z]{2,5}?)(?=[^\u4e00-\u9fa5a-zA-Z]|$)
+[] (?<=^)([\u4e00-\u9fa5a-zA-Z]{2,5}?)(?=(导航|怎么[走去])[^\u4e00-\u9fa5a-zA-Z]$)user_location_to2

@@ -1,0 +1,11 @@
+[D:kw_from] 从
+[D:slot_from] [user_location_from0]
+[D:kw_to] 去|到|回
+[D:slot_to] [user_location_to0]|[user_location_to1]
+# [D:slot_to_ns] [sys_loc]
+[D:kw_daohang] 怎么走|导航|规划路线|骑行|驾车|怎么去|路线规划|路线|开车
+[D:kw_daohang] 有多久|有多远|多久|多远|还有多久|还有多远|有好久|有好远|好久|好远|还有好久|还有好远
+[D:kw_dache] 打车|滴滴|打滴滴|打的|打快车|打个快车
+[D:kw_open] 打开|开启|开开|启动
+[D:kw_close] 关闭|关上|关掉|关了|退出
+[D:kw_useless] 小宝|小宝小宝|搜索|查看|查找|出发|地图

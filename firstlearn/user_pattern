@@ -1,0 +1,86 @@
+[
+    {
+        "items": [
+            {"slot": "[D:kw_open]", "must": 0, "loc": 0},
+            {"slot": "[D:kw_daohang]", "must": 1, "loc": 1}
+        ],
+        "intent": "daohang-open",
+        "matched": 0.9
+    },
+    {
+        "items": [
+            {"slot": "[D:kw_close]", "must": 1, "loc": 0},
+            {"slot": "[D:kw_daohang]", "must": 1, "loc": 1}
+        ],
+        "intent": "daohang-close",
+        "matched": 0.9
+    },
+    {
+        "items": [
+            {"slot": "[D:kw_from]", "must": 0, "loc": 0},
+            {"slot": "[D:slot_from]", "must": 1, "loc": 1},
+            {"slot": "[D:kw_to]", "must": 1, "loc": 2},
+            {"slot": "[D:slot_to]", "must": 1, "loc": 3}
+        ],
+        "intent": "daohang",
+        "allow": ["[D:kw_daohang]", "[D:kw_to]"],
+        "matched": 0.9
+    },
+   {
+        "items": [
+            {"slot": "[D:kw_daohang]", "must": 1, "loc": 0},
+            {"slot": "[D:kw_to]", "must": 1, "loc": 1},
+            {"slot": "[D:slot_to]", "must": 1, "loc": 2}
+        ],
+        "intent": "daohang",
+        "allow": ["[D:kw_daohang]", "[D:kw_to]"],
+        "matched": 0.9
+    },
+   {
+        "items": [
+            {"slot": "[D:kw_daohang]", "must": 1, "loc": 0},
+            {"slot": "[D:slot_to]", "must": 1, "loc": -1}
+        ],
+        "intent": "daohang",
+        "allow": ["[D:kw_daohang]", "[D:kw_to]"],
+        "matched": 0.9
+    },
+   {
+        "items": [
+            {"slot": "[D:kw_dache]", "must": 1, "loc": 0},
+            {"slot": "[D:kw_to]", "must": 1, "loc": 1},
+            {"slot": "[D:slot_to]", "must": 1, "loc": 2}
+        ],
+        "intent": "dache",
+        "allow": ["[D:kw_daohang]", "[D:kw_to]","[D:kw_dache]"],
+        "matched": 0.9
+    },
+    {
+        "items": [
+            {"slot": "[D:kw_open]", "must": 0, "loc": 0},
+            {"slot": "[D:kw_dache]", "must": 1, "loc": 1}
+        ],
+        "intent": "dache-open",
+        "matched": 0.9
+    },
+    {
+        "items": [
+            {"slot": "[D:kw_close]", "must": 1, "loc": 0},
+            {"slot": "[D:kw_dache]", "must": 1, "loc": 1}
+        ],
+        "intent": "dache-close",
+        "matched": 0.9
+    },
+    {
+        "items": [
+            {"slot": "[D:kw_from]", "must": 0, "loc": 0},
+            {"slot": "[D:slot_from]", "must": 1, "loc": 1},
+            {"slot": "[D:kw_to]", "must": 1, "loc": 2},
+            {"slot": "[D:slot_to]", "must": 1, "loc": 3},
+            {"slot": "[D:kw_dache]", "must": 1, "loc": -1}
+        ],
+        "intent": "dache",
+        "allow": ["[D:kw_daohang]", "[D:kw_to]"],
+        "matched": 0.9
+    }
+]
